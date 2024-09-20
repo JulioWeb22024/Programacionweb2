@@ -1,0 +1,56 @@
+.contenedor {
+    background-color: green;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section1 section2 adds"
+        "footer footer footer";
+}
+
+.contenedor .header {
+    background-color: bisque;
+    grid-area: header;
+}
+
+.contenedor .nav {
+    background-color: yellow;
+    grid-area: nav;
+}
+
+.contenedor .section1 {
+    background-color: red;
+    grid-area: section1;
+}
+
+.contenedor .section2 {
+    background-color: pink;
+    grid-area: section2;
+}
+
+.contenedor .adds {
+    background-color: blue;
+    grid-area: adds;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor .adds .ad-item {
+    width: 80%;
+    height: 100px;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+.contenedor .footer {
+    background-color: orange;
+    grid-area: footer;
+}
